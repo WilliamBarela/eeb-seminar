@@ -29,10 +29,12 @@
 
   function genSeminarRow(seminar_list, seminar){
     let row = document.createElement('section');
-    let date = document.createElement('p');
-    let title = document.createElement('p');
-    let speaker = document.createElement('p');
-    let host = document.createElement('p');
+    let date = document.createElement('h3');
+    let title = document.createElement('div');
+    let speaker = document.createElement('div');
+    let host = document.createElement('div');
+
+    //FIXME: check if seminar.is_holiday is true
 
     setRowElements(seminar, date, title, speaker, host);
     appendRowElements(row, date, title, speaker, host);
@@ -42,15 +44,19 @@
   }
   
   function setDate(seminar, date){
+    date.textContent = seminar.date
   }
 
   function setTitle(seminar, title){
+    title.textContent = seminar.title
   }
 
   function setSpeaker(seminar, speaker){
+    speaker.textContent = seminar.speaker
   }
 
   function setHost(seminar, host){
+    host.textContent = seminar.host
   }
 
   function setRowElements(seminar, date, title, speaker, host){
