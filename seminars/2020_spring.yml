@@ -1,0 +1,141 @@
+# Ecology, Evolution, and Behavior (EEB) Seminar
+# Spring 2020 schedule
+
+seminars:
+  - date: "January 15, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "January 22, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "January 29, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+    
+  - date: "February 05, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "February 12, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "February 19, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "February 26, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "March 04, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "March 11, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "March 18, 2020"
+    is_holiday: true
+
+  - date: "March 25, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "April 01, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "April 08, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "April 15, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "April 22, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
+
+  - date: "April 29, 2020"
+    is_cancelled: false
+    is_holiday: false
+    title: "TBA"
+    speaker: "TBA"
+    speaker_website: ""
+    host: "TBA"
+    host_website: ""
