@@ -21,28 +21,47 @@
 
     for (let i = 0; i < seminars.length; i++) {
       let seminar = seminars[i];
-      genSeminarRow(seminar_list, seminar);
+      console.log(seminar);
+      genRow(seminar_list, seminar);
     }
   };
   
   /* the following functions support updateUISuccess */
 
-  function genSeminarRow(seminar_list, seminar){
+  function genRow(seminar_list, seminar){
     let row = document.createElement('section');
     let date = document.createElement('h3');
+    setDate(seminar, date);
+    row.appendChild(date);
+
+    if(seminar.is_holiday === true){
+      genHolidayRow(row, date, seminar_list, seminar);
+    }
+    else{
+      genSeminarRow(row, date, seminar_list, seminar);
+    }
+  }
+  
+  function genSeminarRow(row, date, seminar_list, seminar){
     let title = document.createElement('div');
     let speaker = document.createElement('div');
     let host = document.createElement('div');
 
-    //FIXME: check if seminar.is_holiday is true
-
     setRowElements(seminar, date, title, speaker, host);
     appendRowElements(row, date, title, speaker, host);
     seminar_list.appendChild(row);
-
-    console.log(seminar);
   }
-  
+
+  function genHolidayRow(row, date, seminar_list, seminar){
+    let holiday_name = document.createElement('div')
+
+    console.log(seminar.holiday_name);
+    holiday_name.textContent = seminar.holiday_name;
+    row.appendChild(date); 
+    row.appendChild(holiday_name);
+    seminar_list.appendChild(row);
+  }
+
   function setDate(seminar, date){
     date.textContent = seminar.date
   }
@@ -60,14 +79,12 @@
   }
 
   function setRowElements(seminar, date, title, speaker, host){
-    setDate(seminar, date);
     setTitle(seminar, title);
     setSpeaker(seminar, speaker);
     setHost(seminar, host);
   }
 
   function appendRowElements(row, date, title, speaker, host){
-    row.appendChild(date);
     row.appendChild(title);
     row.appendChild(speaker);
     row.appendChild(host);
