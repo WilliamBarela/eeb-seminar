@@ -6,8 +6,8 @@ seminars:
     title: "TBA"
     speaker: "Google"
     speaker_website: "https://www.google.com"
-    host: "TBA"
-    host_website: ""
+    host: "John Doe - Texas Tech University"
+    host_website: "https://www.depts.ttu.edu/biol/"
     is_cancelled: false
 
   - date: "January 22, 2020"
