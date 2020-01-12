@@ -85,7 +85,7 @@
     if(seminar.speaker_website !== ''){
       let speaker_website = document.createElement('a');
       speaker_website.setAttribute('class', 'speaker_website');
-      speaker_website.setAttribute('href', "mailto:" + seminar.speaker_website);
+      speaker_website.setAttribute('href', seminar.speaker_website);
       speaker_website.textContent = seminar.speaker;
       speaker.textContent = "Speaker: ";
       speaker.appendChild(speaker_website);
