@@ -87,6 +87,7 @@
       speaker_website.setAttribute('class', 'speaker_website');
       speaker_website.setAttribute('href', seminar.speaker_website);
       speaker_website.textContent = seminar.speaker;
+
       speaker.textContent = "Speaker: ";
       speaker.appendChild(speaker_website);
     }
@@ -96,14 +97,23 @@
   }
 
   function setHost(seminar, host){
-    let host_website = document.createElement('a');
-    host_website.setAttribute('class', 'host_website');
-    host_website.setAttribute('href', "mailto:" + seminar.host_website);
-    host_website.textContent = seminar.host;
-
     host.setAttribute('class','host');
-    host.textContent = "Host: ";
-    host.appendChild(host_website);
+    setHostWebsite(seminar, host);
+  }
+
+  function setHostWebsite(seminar, host){
+    if(seminar.host_website !== ''){
+      let host_website = document.createElement('a');
+      host_website.setAttribute('class', 'host_website');
+      host_website.setAttribute('href', seminar.host_website);
+      host_website.textContent = seminar.host;
+
+      host.textContent = "Host: ";
+      host.appendChild(host_website);
+    }
+    else{
+      host.textContent = `Host: ${seminar.host}`;
+    }
   }
 
   function setRowElements(seminar, date, title, speaker, host){
