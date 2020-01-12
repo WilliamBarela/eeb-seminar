@@ -86,6 +86,8 @@
       let speaker_website = document.createElement('a');
       speaker_website.setAttribute('class', 'speaker_website');
       speaker_website.setAttribute('href', seminar.speaker_website);
+      speaker_website.setAttribute('title', seminar.speaker);
+      speaker_website.setAttribute('target', '_blank');
       speaker_website.textContent = seminar.speaker;
 
       speaker.textContent = "Speaker: ";
@@ -106,6 +108,8 @@
       let host_website = document.createElement('a');
       host_website.setAttribute('class', 'host_website');
       host_website.setAttribute('href', seminar.host_website);
+      host_website.setAttribute('title', seminar.host);
+      host_website.setAttribute('target', '_blank');
       host_website.textContent = seminar.host;
 
       host.textContent = "Host: ";
