@@ -55,27 +55,55 @@
   function genHolidayRow(row, date, seminar_list, seminar){
     let holiday_name = document.createElement('div')
 
-    console.log(seminar.holiday_name);
-    holiday_name.textContent = seminar.holiday_name;
+    setHoliday(seminar, holiday_name)
     row.appendChild(date); 
     row.appendChild(holiday_name);
     seminar_list.appendChild(row);
   }
 
+  function setHoliday(seminar, holiday_name){
+    holiday_name.setAttribute('class', 'holiday');
+    holiday_name.textContent = `Holiday: ${seminar.holiday_name}`;
+  }
+
   function setDate(seminar, date){
-    date.textContent = seminar.date
+    date.setAttribute('class', 'date');
+    date.textContent = seminar.date;
   }
 
   function setTitle(seminar, title){
-    title.textContent = seminar.title
+    title.setAttribute('class', 'title');
+    title.textContent = `Title: ${seminar.title}`;
   }
 
   function setSpeaker(seminar, speaker){
-    speaker.textContent = seminar.speaker
+    speaker.setAttribute('class', 'speaker');
+    setSpeakerWebsite(seminar, speaker);
+  }
+
+  function setSpeakerWebsite(seminar, speaker){
+    if(seminar.speaker_website !== ''){
+      let speaker_website = document.createElement('a');
+      speaker_website.setAttribute('class', 'speaker_website');
+      speaker_website.setAttribute('href', "mailto:" + seminar.speaker_website);
+      speaker_website.textContent = seminar.speaker;
+      speaker.textContent = "Speaker: ";
+      speaker.appendChild(speaker_website);
+    }
+    else{
+      speaker.textContent = `Speaker: ${seminar.speaker}`;
+    }
   }
 
   function setHost(seminar, host){
-    host.textContent = seminar.host
+    let host_website = document.createElement('a');
+    host_website.setAttribute('class', 'host_website');
+    host_website.setAttribute('href', "mailto:" + seminar.host_website);
+    host_website.textContent = seminar.host;
+
+    host.setAttribute('class','host');
+    host.textContent = "Host: ";
+    host.appendChild(host_website);
   }
 
   function setRowElements(seminar, date, title, speaker, host){
