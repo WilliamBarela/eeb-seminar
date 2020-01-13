@@ -2,7 +2,7 @@
 # Spring 2020 schedule
 
 seminars:
-  - date: "January 15, 2020"
+  - date: "January 15, 2010"
     title: "TBA"
     speaker: "Google"
     speaker_website: "https://www.google.com"
@@ -10,7 +10,7 @@ seminars:
     host_website: "https://www.depts.ttu.edu/biol/"
     is_cancelled: false
 
-  - date: "January 22, 2020"
+  - date: "January 22, 2010"
     title: "TBA"
     speaker: "TBA"
     speaker_website: ""
