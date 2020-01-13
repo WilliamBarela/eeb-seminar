@@ -21,7 +21,6 @@
 
     for (let i = 0; i < seminars.length; i++) {
       let seminar = seminars[i];
-      console.log(seminar);
       genRow(seminar_list, seminar);
     }
   };
@@ -40,6 +39,8 @@
     else{
       genSeminarRow(row, date, seminar_list, seminar);
     }
+
+    setRowClass(row, seminar);
   }
   
   function genSeminarRow(row, date, seminar_list, seminar){
@@ -59,6 +60,12 @@
     row.appendChild(date); 
     row.appendChild(holiday_name);
     seminar_list.appendChild(row);
+  }
+
+  function setRowClass(row, seminar) {
+    if(Date(seminar.date) > Date.now){
+      row.setAttribute('class', 'past_seminar');
+    }
   }
 
   function setHoliday(seminar, holiday_name){
