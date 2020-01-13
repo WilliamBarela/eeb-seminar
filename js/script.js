@@ -63,7 +63,9 @@
   }
 
   function setRowClass(row, seminar) {
-    if(Date(seminar.date) > Date.now){
+    let seminar_date = new Date(seminar.date);
+    let now = new Date();
+    if(seminar_date < now){
       row.setAttribute('class', 'past_seminar');
     }
   }
